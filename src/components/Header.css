@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+.header-boss {position: relative; height: 100vh;}
+.header {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backVid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    opacity: 1;
+    z-index: 2;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    background: #604fe7;
+    mix-blend-mode: overlay;
+    z-index: 3;
+}
+.tours-btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    z-index: 4;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    background: #e04f67;
+    color: #fff;
+    margin-top: 9rem;
+    padding: .6rem 1.6rem;
+    border-radius: 4px;
+    transition: .3s;
+}
+.tours-btn:hover {
+    text-decoration: none;
+    background: #fff;
+    color: #e04f67;
+}

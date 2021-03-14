@@ -1,0 +1,141 @@
+.logbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    width: 360px;
+    height: 480px;
+    transform: translate(-50%, -50%) scale(0);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, .2);
+    float: left;
+    transition: .6s;
+}
+.loginShow {
+    transform: translate(-50%, -50%) scale(1);
+}
+@media (max-width: 368px) {
+    .logbox {width: 100vw}
+}
+.logbox::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 6px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, 
+        rgba(255, 255, 255, .3) 0%, 
+        rgba(255, 255, 255, .1) 15%, 
+        transparent 50%,
+        transparent 85%,
+        rgba(255, 255, 255, .1) 100%
+        );
+}
+.logbox .form {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.logbox .form .inputBx {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.logbox .form .inputBx input:not([type="checkbox"]) {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    padding: 8px 10px 8px 35px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, .2)
+}
+.logbox .form .inputBx input::placeholder {
+    color: #fff;
+}
+.logbox .form .inputBx input[type="submit"] {
+    background: #fff;
+    color: #333;
+    padding: 8px 10px;
+    box-shadow: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+.logbox .form .inputBx .icon {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+
+}
+
+.quest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+.logbox .signUpLink {
+    color: #fff;
+    transition: .3s;
+    letter-spacing: 0px;
+    margin-top: 10px !important;
+}
+.logbox .signUpLink:hover {
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.logbox .imglay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #222 url(https://cdn.ebnbatota.com/public/img/pattern.png) repeat 0 0;
+    border-radius: 6px;
+}
+.logbox .screenlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 200vw;
+    height: 200vh;
+    background: #000;
+    z-index: -2;
+    margin-left: -50vw;
+    margin-top: -50vh;
+    opacity: .4;
+    cursor: pointer;
+}
+.logbox .exitBtn {
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    top: 0;
+    right: 0;
+    background: none;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+#checkBox {
+    margin-right: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.terms {
+    color: #666;
+    position: relative;
+    z-index: 4;
+    background: #fff;
+    margin-bottom: 60vh;
+    font-size: 13px;
+    /* line-height: 1.2 */
+}
+.terms h2, .terms h3 {
+    margin: 20px 0 10px;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    font-weight: 500;
+}
+.terms h3 {font-size: 22px;}
+.line1 {
+    color: #343a40;
+    display: block;
+}
+.terms p {
+    margin-bottom: 20px;
+}
+.border-bottom {
+    border-bottom: 1px solid #dee2e6;
+}
+.terms ul {
+    padding-inline-start: 40px;
+}

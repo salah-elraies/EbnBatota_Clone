@@ -1,0 +1,98 @@
+* {transition: .3s;}
+.STrip {
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+}
+.SPageHead {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    box-sizing: border-box;
+}
+.SPageHead img {
+    width: 100%;
+    height: 75vh;
+    user-select: none;
+    box-sizing: border-box;
+}
+.SPageHead .TourName {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+}
+.TourName h1 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+.TourName .smileIconePage {
+    color: #fff;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+
+.slide-container {
+    padding-top: 4vw;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 0;
+    background: #fff;
+    box-sizing: border-box;
+}
+.each-slide {height: 60vh;box-sizing: border-box;}
+.each-slide > div {
+    background-size: 100% 100%;
+    height: 100%;
+    cursor: grab;
+    box-sizing: border-box;
+}
+.each-slide > div:active {cursor: grabbing}
+.indicators {
+    max-height: 90px;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-direction: column;
+}
+.span {
+    color: #fff;
+    margin: 30% 30%;
+}
+.indicators::-webkit-scrollbar {background: transparent; height: 8px}
+/* .indicators::-webkit-scrollbar-track-piece {background: #f00} */
+.indicators::-webkit-scrollbar-track {background: transparent}
+.indicators::-webkit-scrollbar-corner {background: #0f0}
+.indicators::-webkit-scrollbar-thumb {background: linear-gradient(to left, #000 0%, #fff 100%);}
+.indicators::-webkit-scrollbar-button {background: linear-gradient(to left, #000 0%, #000 50%, #fff 50%, #fff 100%); cursor: pointer;position: relative;z-index: -1;}
+
+
+.indicator {
+    cursor: pointer;
+    padding: 5px;
+    background: #fff;
+    width: 90px;
+    
+  }
+  
+  .indicator.active {
+    color: #fff;
+    background: #666;
+  }
+@media (max-width: 768px) {
+    .SPageHead img {width: 100%; height: auto}
+}
+.covering {
+    
+    background: #fff;
+    
+}

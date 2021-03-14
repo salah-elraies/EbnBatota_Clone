@@ -1,0 +1,61 @@
+footer {
+    background: #222 url(https://cdn.ebnbatota.com/public/img/pattern.png) repeat 0 0;
+    color: #fff;
+    padding: 30px 0 10px 0;
+    position: fixed;
+    height: 50vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.supLink{
+    text-decoration: none;
+    color: #fdf7ac;
+    font-size: 12px;
+    transition: .3s;
+    display: block;
+    margin: 20px 0;
+}
+.supLink:hover {
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (min-width: 976px) {
+    .supLink {
+        font-size: 1.2vw
+    }
+}
+.coloring {color: #fff;margin:0; margin-top: 5px; font-size: 12px;}
+.coloring:hover { color: #999; }
+
+.social {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    max-width: 300px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.social-icons .iconFootr {
+    color: #fff;
+    transition: .3s;
+    padding: 7px;
+    border-radius: 50%;
+}
+.social-icons .iconFootr:hover {
+    color: #333;
+    background: #fff;
+}
+.social p {
+    color: #999;
+    font-size: 12px;
+}

@@ -1,0 +1,43 @@
+.group.container {
+    padding-bottom: 60px;
+}
+.group .title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: #333;
+    padding: 60px 0 30px;
+}
+.group h2 span {color: #e04f67}
+
+.text-center {
+    text-align: center;
+}
+.toTrips {
+    padding: 10px 25px;
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    background: #e04f67;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.toTrips:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #333;
+}
+
+.main {
+    margin-bottom: 50vh;
+    position: relative;
+    z-index: 3;
+    background: #fff;
+}
+.trips .ribbon {
+    display: none !important;
+}
